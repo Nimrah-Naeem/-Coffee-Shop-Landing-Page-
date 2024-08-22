@@ -1,0 +1,366 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: beige;
+}
+
+.banner * {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-image: url(images/r.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 100%;
+    color: beige;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+}
+
+.banner i {   position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-size: 60px;
+    
+}
+
+.banner h1 {
+    z-index: 2;
+    padding-top: 30px ;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+.banner h2 {
+    font-family: 'Dancing Script', cursive;
+    padding-top: 10px;
+}
+
+.nav {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Gupter', serif;
+    white-space: nowrap;
+}
+
+.nav a {
+    color: beige;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 10px;
+    height: 10px;
+    transition: transform 750ms easy;
+    
+}
+@media only screen and (max-width:1000px)
+{
+    .nav a{
+  font-size: 0.9em;
+  margin: 0 5px;
+}
+}
+ 
+
+.nav a:hover{
+    transform: scale(1.2); 
+
+}
+
+.banner h3{
+    font-family: 'Gupter', serif;
+    position: absolute;
+    bottom: 25px;
+    border-radius: 4px;
+    border:1px solid beige;
+    padding: 10px;
+    transition: transform 1s easy;
+    cursor: pointer;
+    
+}
+.banner h3:hover{
+    transform: scale(1.1); 
+}
+.about{
+    align-items: center;
+    margin: 25px 250px;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+.about .imgcontainer{
+    display: inline-block;
+    margin: 15px;
+    background-color: rgb(237, 209, 188);
+    border:4px rgb(237, 209, 188);
+    border-radius: 2px;
+}
+.about .imgcontainer img{
+    margin: 10px;
+    width: 250px ;
+    height: 250px ;
+    border:4px rgb(237, 209, 188);
+    border-radius: 2px;
+    display:block;
+}
+.story{
+    margin-top: 40px !important;
+    margin-bottom: 50px ;
+    flex: 1; 
+    align-items: flex-start;
+    justify-content: center;
+    display: flex; 
+    flex-direction: column;
+}
+
+.story h1 {
+ 
+    text-decoration: underline rgb(67, 37, 15);
+    text-underline-offset: 0.25cm; 
+    color:  rgb(50, 25, 7);
+}
+.story p{
+    margin-top:8px !important;
+    margin: auto;
+    
+}
+@media  only screen  and (max-width:1000px)
+{
+    .about
+    { 
+        flex-direction: column;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        padding: 0;
+    }
+}
+@media  only screen  and (max-width:1000px)
+{
+    .story
+    { 
+        flex-direction: column;
+  
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        padding: 0;
+    }
+
+}
+
+@media  only screen  and (max-width:1000px)
+{
+    .story p{
+        text-align: center;
+        margin: 0 100px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }   
+}
+
+
+.Staffcontainer{
+    height: 250px;
+    background-color: rgb(207, 155, 115);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Staffcontainer {
+    height: 250px;
+    background-color: rgb(207, 155, 115);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin bottom: 20px;
+}
+
+.Staffcontainer .staff {
+    margin: 5px;
+    width: 280px;
+    height: 250px;
+    display: block;
+}
+
+.Staffcontainer .imgcontainer img {
+    margin: 10px;
+    width: 450px;
+    height: 250px;
+    display: block;
+    
+}
+
+.staff h1 {
+    margin-top: 5px;
+    margin-left: 28px;
+    text-decoration: underline rgb(67, 37, 15);
+    text-underline-offset: 0.25cm; 
+    color: rgb(50, 25, 7);
+}
+
+.staff li {
+    padding: 5px;
+}
+
+
+@media (max-width: 1000px) {
+    .Staffcontainer {
+        flex-direction: column; 
+        height: auto; 
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .Staffcontainer .staff {
+        width: auto; 
+        height: auto; 
+        margin: 10px auto; 
+        padding: auto;
+    }
+    
+    .Staffcontainer .imgcontainer img {
+        margin: 5px;
+        width: 280px;
+        height: 250px;
+        
+    }
+    
+}
+.intro{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding:0;
+
+}
+
+.intro h1 {
+    margin-top: 30px;
+    padding: 0;
+    text-decoration: underline rgb(67, 37, 15);
+    text-underline-offset: 0.25cm; 
+    color: rgb(50, 25, 7);
+  
+}
+.intro h3 {
+   margin:0;
+    padding: 0;
+}
+.brews{
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.brews .imgcontainer{
+    display: inline-block;
+    margin: 30px;
+}
+.brews .imgcontainer img{
+   
+    width: 13rem;
+    height: 13rem;
+    object-fit: cover;
+    border: 5px solid  rgb(237, 209, 188); 
+    border-radius: 2px;  
+    transition: transform 1s easy;
+}
+.brews .imgcontainer img:hover{
+    transform: scale(1.1);
+}
+
+.bytesintro{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding:0;
+
+}
+
+.bytesintro h1 {
+    margin-top: 0px;
+    padding: 0;
+    text-decoration: underline rgb(67, 37, 15);
+    text-underline-offset: 0.25cm; 
+    color: rgb(50, 25, 7);
+  
+}
+.bytesintro h3 {
+   margin:0;
+    padding: 0;
+}
+.bytes{
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.bytes .imgcontainer{
+    display: inline-block;
+    margin: 30px;
+}
+.bytes .imgcontainer img{
+   
+    width: 13rem;
+    height: 13rem;
+    object-fit: cover;
+    border: 5px solid  rgb(237, 209, 188); 
+    border-radius: 2px;    
+     transition: transform 1s easy;
+}
+.bytes .imgcontainer img:hover{
+    transform: scale(1.1);
+}
+
+
+.footer {
+    background-color: rgb(100, 71, 51);
+    color: beige; 
+    height: 200px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer h3{
+    margin:0;
+}
+.footer .icons{
+    font-size:25px;
+    display:flex;
+    padding: 10px;
+    flex-direction: row !important;
+    gap: 20px;
+}
+
+
+
+
